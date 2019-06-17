@@ -10,9 +10,7 @@ object ReverseVowels {
   def reverseVowels(input: String): String = {
     /**
      * Traverses the sequence (or [[Seq]] in Scala) of [[Char]] using recursive call.
-     *
      * If the head of the list is the vowel to be reversed, we'll just reverse the vowel.
-     *
      * Otherwise, we'll just leave the char as is.
      */
     @tailrec
