@@ -12,6 +12,8 @@ object ReverseVowels {
      * Traverses the sequence (or [[Seq]] in Scala) of [[Char]] using recursive call.
      * If the head of the list is the vowel to be reversed, we'll just reverse the vowel.
      * Otherwise, we'll just leave the char as is.
+     *
+     * Uses tail recursion to ensure we're being stack safe when performing recursive call.
      */
     @tailrec
     def traverse(charsWithIndex: Seq[Char], vowelsWithReverse: Seq[(Vowel, VowelReversed)], result: String): String =
