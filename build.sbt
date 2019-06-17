@@ -5,7 +5,7 @@ scalariformPreferences in ThisBuild := scalariformPreferences.value
   .setPreference(AlignSingleLineCaseStatements, true)
   .setPreference(AllowParamGroupsOnNewlines, true)
 
-//wartremoverErrors in (Compile, compile) := Warts.unsafe.filterNot(_ ==  Wart.DefaultArguments)
+wartremoverErrors in (Compile, compile) := Warts.unsafe.filterNot(_ ==  Wart.DefaultArguments)
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % "test"
